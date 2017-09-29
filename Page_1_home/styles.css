@@ -1,11 +1,13 @@
 html {
-  background-image: url(images/homebackground.jpg);
-  background-size: cover;
+  /*background-image: url(images/warrior2.png), url(images/Birds.png) ;*/
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
 
 
 body {
-
 
 }
 
@@ -18,9 +20,8 @@ header {
 
 h1 {
   text-align: center;
-  animation-name:
-  font-size: 100px;
-  font-size: 75px
+  color: white;
+  font-size: 100px
 
 }
 
@@ -32,54 +33,85 @@ h1 {
 
 
 }*/
+.image-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper .parallax {
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 90%;
+}
+
+.parallax img {
+  max-width: 100%;
+}
+
+#image1 {
+  z-index: 10;
+}
+
+#image2 img {
+  width: 100%;
+  margin-top: -27px;
+}
+
+.title {
+  margin-top: 640px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    margin-top: 300px;
+  }
+
+  .image-links {
+    margin-top: -200px !important;
+  }
+}
 
 
-.photo1 img{
+.photo {
+  position: relative;
+}
+
+.photo1 img {
   width: 250px;
-  height: 300px;
-  margin-top: 75px;
-  padding: 126px;
-
-
+  height: 300px;;
 }
 
 .photo2 img {
   width: 215px;
   height: 365px;
-  margin-top: 60%;
-  margin-left: 600%;
-  padding: 49%;
-
+  margin-top: 700px;
 }
-
 
 .photo3 img {
   width: 177px;
   height: 300px;
-  margin-left: 800px;
-  padding-left: 14%;
-
 }
 
-.photo-links1 {
+.photo-animation1 {
   animation: MoveUpDown 4s ease-in-out infinite;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 50px;
 }
 
-.photo-links2 {
-  animation: diagonal-slide 4s ease-in-out infinite;
-  width: 100px;
-  height: 100px;
+.photo-animation2 {
+  animation: MoveUpDown 4s ease-in-out infinite;
+  display: inline-block;
   position: relative;
-  transform: translateX(-66.6%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.photo-links3 {
+.photo-animation3 {
   animation: MoveUpDown 4s ease-in-out infinite;
   position: absolute;
-  left: 0;
+  right: 100px;
   bottom: 0;
 }
 
@@ -97,42 +129,26 @@ h1 {
   }
 }
 
-@keyframes diagonal-slide {
-  0% {
-    right: 0;
-    top: 0;
-  }
-
-  50% {
-    right: 100px;
-    top: 100px;
-
-  }
-
-
-  100% {
-    right: 0px;
-    top: 0px;
-  }
+.image-links {
+    max-width: 100%;
+    position: relative;
+    height: 500px;
+    z-index: 9999;
+    margin-top: -600px;
 }
 
-.image {
-    /*display: flex;*/
-    width: 100%;
-    height: 100%;
-
-
-}
-
-.image img {
+.image-links a {
     -webkit-transition: all 1s ease-in-out; /* Safari and Chrome */
     -moz-transition: all 1s ease-in-out; /* Firefox */
     -ms-transition: all 1s ease-in-out; /* IE 9 */
     -o-transition: all 1s ease-in-out; /* Opera */
     transition: all .5s ease-in-out;
+    display: block;
+    position: relative;
+    z-index: 99;
 }
 
-.image:hover img {
+.image-links a:hover {
     -webkit-transform:scale(1.15); /* Safari and Chrome */
     -moz-transform:scale(1.15); /* Firefox */
     -ms-transform:scale(1.15); /* IE 9 */
@@ -140,7 +156,7 @@ h1 {
      transform:scale(1.15);
 }
 
-@keyframes blink {
+/*@keyframes blink {
     0% {
         opacity: 1;
     }
@@ -154,4 +170,4 @@ h1 {
 img {
     animation: blink 1s;
     animation-iteration-count: infinite;
-}
+}*/
