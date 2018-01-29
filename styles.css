@@ -27,6 +27,7 @@ h1 {
 }*/
 .image-wrapper {
   max-width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -38,8 +39,7 @@ h1 {
   width: 90%;
 }
 
-@media (max-width: 600px) {
-  .parallax img {
+.parallax img {
   max-width: 100%;
   height: auto;
 }
