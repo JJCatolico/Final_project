@@ -25,8 +25,7 @@ h1 {
 
 
 }*/
-@media (max-width: 600px) {
-  .image-wrapper {
+.image-wrapper {
   max-width: 100%;
   overflow: hidden;
 }
@@ -48,7 +47,7 @@ h1 {
 }
 
 #image2 img {
-  width: 100%;
+  max-width: 100%;
   margin-top: -27px;
 }
 
