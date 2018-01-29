@@ -38,7 +38,8 @@ h1 {
   width: 90%;
 }
 
-.parallax img {
+@media (max-width: 600px) {
+  .parallax img {
   max-width: 100%;
   height: auto;
 }
