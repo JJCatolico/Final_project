@@ -25,8 +25,9 @@ h1 {
 
 
 }*/
-.image-wrapper {
-  max-width: 1350px;
+@media (max-width: 600px) {
+  .image-wrapper {
+  max-width: 100%;
   overflow: hidden;
 }
 
